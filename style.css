@@ -20,5 +20,31 @@ a {
 li {
   list-style: none;
   margin: 5px 20px;
+  font-size: larger;
+}
+
+.textBox {
+  margin: 10px 20px;
+  display: flex;
+  justify-content: center;
+}
+.boxInput {
+  padding: 10px 10px;
   font-size: large;
+  width: 100%;
+}
+button {
+  margin: 10px 20px;
+  font-size: 20px;
+  padding: 10px 10px;
+  background-color: black;
+  color: white;
+  width: 150px;
+}
+button:hover {
+  background-color: rgb(150, 0, 20);
+  cursor: pointer;
+}
+button:active {
+  transform: scale(0.98);
 }

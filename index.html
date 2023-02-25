@@ -28,7 +28,30 @@
             </ul>
         </div>
     </div>
+    <div style="margin: 15px 15px; font-size: 30px; ">Teacher's Signup</div>
+    <div class="textBox">
+        <input type="text" placeholder="Full Name" class="boxInput" id="naam">
+    </div>
+    <div class="textBox">
+        <input type="email" placeholder="Email" class="boxInput" id="mail">
+    </div>
+    <div class="textBox">
+        <input type="password" placeholder="Password" class="boxInput" id="pass">
+    </div>
+    <div class="textBox">
+        <input type="password" placeholder="Confirm Password" class="boxInput" id="cpass">
+    </div>
+    <button onclick="fun1()">Signup</button>
+    <p id="warn" style="color: red; margin-left: 20px;"></p>
+    <p id="great" style="color: green; margin-left: 20px;"></p>
 
+
+    <script src="index.js"></script>
+    <script>
+        if (localStorage.getItem("currentUser") != null) {
+            window.location.assign("dashboard.html");
+        }
+    </script>
 </body>
 
 </html>
